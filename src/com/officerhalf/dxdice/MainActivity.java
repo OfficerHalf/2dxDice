@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
+//Everything happens here
 public class MainActivity extends Activity {
 
 	protected NumberPicker dicePicker;
