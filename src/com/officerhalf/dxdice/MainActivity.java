@@ -44,8 +44,9 @@ public class MainActivity extends Activity {
 		int[] rolls = new int[dice];	
 		
 		//Get Rolls
+		Random r = new Random();
 		for(int i = 0; i < dice; i++)
-			rolls[i] = roll(sides);
+			rolls[i] = r.nextInt(sides) + 1;
 		
 		//Display Rolls
 		TextView output = (TextView) findViewById(R.id.roll_output);
@@ -65,9 +66,4 @@ public class MainActivity extends Activity {
 		output.setText(outputText);
 	}
 	
-	public int roll (int sides) {
-		Random r = new Random();
-		int result = r.nextInt(sides) + 1;
-		return result;
-	}
 }
