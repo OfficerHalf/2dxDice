@@ -13,6 +13,7 @@ public class MainActivity extends Activity {
 
 	protected NumberPicker dicePicker;
 	protected NumberPicker sidesPicker;
+	Random r = new Random();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,6 @@ public class MainActivity extends Activity {
 		int[] rolls = new int[dice];	
 		
 		//Get Rolls
-		Random r = new Random();
 		for(int i = 0; i < dice; i++)
 			rolls[i] = r.nextInt(sides) + 1;
 		
