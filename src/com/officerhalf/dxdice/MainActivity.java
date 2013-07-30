@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
 		dicePicker.setMinValue(1);
 		sidesPicker.setMaxValue(100);
 		sidesPicker.setMinValue(1);
+		
 	}
 
 	@Override
