@@ -12,38 +12,7 @@
         android:id="@+id/sidesPicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/sidesPicker"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:text="@string/d_dice"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="35sp" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:onClick="roll_button"
-        android:text="@string/roll_button" />
-
-    <!-- For some reason this doesn't want to update, so putting a comment to force a diff -->
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/button1"
-        android:text="@string/last_roll"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+		android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/roll_output"
@@ -53,5 +22,56 @@
         android:layout_below="@+id/textView2"
         android:text="@string/roll_output"
         android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/sidesPicker"
+        android:onClick="roll_button"
+        android:text="@string/roll_button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/dicePicker"
+        android:text="@string/last_roll"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/sidesPicker"
+        android:layout_marginBottom="43dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@string/d_dice"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:layout_toRightOf="@+id/dicePicker"
+        android:onClick="save_roll"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/recall_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save_button"
+        android:layout_alignBottom="@+id/save_button"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/save_button"
+        android:onClick="recall_roll"
+        android:text="@string/recall" />
 
 </RelativeLayout>

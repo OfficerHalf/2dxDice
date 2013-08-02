@@ -9,5 +9,7 @@
     <string name="title_activity_display_roll">DisplayRollActivity</string>
     <string name="roll_output"> None</string>
     <string name="last_roll">Last Roll:</string>
+    <string name="save">Save</string>
+    <string name="recall">Recall</string>
 
 </resources>
